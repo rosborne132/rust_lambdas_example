@@ -42,3 +42,4 @@ sam build && sam deploy --guided
 
 ### Helpful Resources
 - [Blog Post](https://dev.to/rad_val_/aws-lambda-rust-292g)
+- [Example Repo](https://github.com/valentinradu/rust-aws-lambda-example/blob/master/Cargo.toml)
