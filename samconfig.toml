@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "Rust-Lambdas"
+s3_bucket = "dev-component-artifacts"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND"
+role-arn = "arn:aws:iam::513171813070:role/AWS_SAM_Role"

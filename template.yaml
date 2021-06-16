@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: An example of Rust-based Serverless Functions
+
+Resources:
+  Hello:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Hello
+      Handler: doesnt.matter
+      Runtime: provided
+      MemorySize: 128
+      Timeout: 10
+      CodeUri: .
+      Description: Sends a hello message
+      Policies:
+        - AWSLambdaBasicExecutionRole
+    Metadata:
+      BuildMethod: makefile
+
+  Goodbye:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Goodbye
+      Handler: doesnt.matter
+      Runtime: provided
+      MemorySize: 128
+      Timeout: 10
+      CodeUri: .
+      Description: Sends a good bye message
+      Policies:
+        - AWSLambdaBasicExecutionRole
+    Metadata:
+      BuildMethod: makefile

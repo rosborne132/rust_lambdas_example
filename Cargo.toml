@@ -1,0 +1,25 @@
+[package]
+name = "rust_lambdas"
+version = "0.1.0"
+authors = ["rosborne132 <ozborne132@gmail.com>"]
+edition = "2018"
+autobins = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_runtime = "0.2.1"
+serde = "1.0.123"
+serde_json = "1.0.62"
+serde_derive = "1.0.123"
+log = "0.4.14"
+simple_logger = "1.11.0"
+simple-error = "0.2.3"
+
+[[bin]]
+name = "hello"
+path = "src/hello.rs"
+
+[[bin]]
+name = "good_bye"
+path = "src/good_bye.rs"
