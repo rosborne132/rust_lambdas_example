@@ -21,7 +21,10 @@ Default output format [None]: json
 
 Set up linux musl
 ```bash
+# adds the x86 64 target to the toolchain
 rustup target add x86_64-unknown-linux-musl
+# installs the x86 64 toolchain on macOS (for Windows, try cygwin-gcc-linux)
+brew install FiloSottile/musl-cross/musl-cross
 ```
 
 Install musl-cross through brew
@@ -32,7 +35,7 @@ brew install filosottile/musl-cross/musl-cross
 ### Helpful Scripts
 Building the project
 ```bash
-cargo build
+cargo build --target x86_64-unknown-linux-musl
 ```
 
 Deploy the project
